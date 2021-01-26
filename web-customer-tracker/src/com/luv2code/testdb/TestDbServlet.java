@@ -18,24 +18,17 @@ import java.sql.*;
 public class TestDbServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    /**
-     * Default constructor. 
-     */
-    public TestDbServlet() {
-        // TODO Auto-generated constructor stub
-    }
-
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+
 		// setup connection variables
 		String user = "springstudent";
 		String pass = "springstudent";
 		
 		String jdbcUrl = "jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false&serverTimezone=UTC";
-		String driver ="com.mysql.jdbc.Driver";
+		String driver = "com.mysql.cj.jdbc.Driver";
 		
 		// get connection to database
 		try {
@@ -47,7 +40,7 @@ public class TestDbServlet extends HttpServlet {
 			
 			Connection myConn = DriverManager.getConnection(jdbcUrl, user, pass);
 			
-			out.println("SUCCESS!!");
+			out.println("SUCCESS!!!");
 			
 			myConn.close();
 			
@@ -56,6 +49,16 @@ public class TestDbServlet extends HttpServlet {
 			exc.printStackTrace();
 			throw new ServletException(exc);
 		}
+	
+	
 	}
 
 }
+
+
+
+
+
+
+
+
