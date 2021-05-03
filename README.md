@@ -1,4 +1,4 @@
-# DatabaseWebApp 
+# Customer Relationship Manager App 
 
 This is a Customer Relationship Manager App which is very simple.
 
