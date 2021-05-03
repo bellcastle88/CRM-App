@@ -1,6 +1,6 @@
 # DatabaseWebApp 
 
-This is a CRM App which is very simple.
+This is a Customer Relationship Manager App which is very simple.
 
 I made this app to improve my developing skill with Java and Spring.
 
