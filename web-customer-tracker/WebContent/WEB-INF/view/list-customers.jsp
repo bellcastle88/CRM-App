@@ -5,6 +5,13 @@
 <html>
 
 <head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	
 	<title>List Customers</title>
 	
 	<!-- reference our style sheet -->
@@ -29,20 +36,22 @@
 		
 			<!-- put new button: Add Customer -->
 			
-			<input type="button" value="Add Customer"
+			<input type="button" class="btn btn-outline-success"	 value="Add Customer"
 					onclick="window.location.href='showFormForAdd'; return false;"
 					class="add-button"
 			/>
 		
 			<!--  add our html table here -->
 		
-			<table>
-				<tr>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Email</th>
-					<th>Action<th>
-				</tr>
+			<table class="table">
+				<thead class="table-primary">
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email</th>
+						<th>Action<th>
+					</tr>
+				</thead>
 				
 				<!-- loop over and print our customers -->
 				<c:forEach var="tempCustomer" items="${customers}">
@@ -64,9 +73,10 @@
 					
 						<td>
 						<!-- display the update link -->
-						<a href="${updateLink}">Update</a>
-						|
+						<a href="${updateLink}" type="button" class="btn btn-outline-warning">Update</a>
+
 						<a href="${deleteLink}"
+							type="button" class="btn btn-outline-danger"
 							onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Delete</a>
 						</td>
 					</tr>
@@ -83,6 +93,3 @@
 </body>
 
 </html>
-
-
-
