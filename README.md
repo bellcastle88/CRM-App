@@ -9,7 +9,7 @@ Built with:
 - Java
 - Spring
 - Hibernate  
-- MySQL   
+- MySQL    
 
 ## Description
 
