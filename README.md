@@ -1,8 +1,8 @@
 # DatabaseWebApp 
 
-This is a DatabaseWebApp which is very simple.
+This is a CRM App which is very simple.
 
-I am following Udemy course to improve my developing skill with Java and Spring.
+I made this app to improve my developing skill with Java and Spring.
 
 Built with:
 
