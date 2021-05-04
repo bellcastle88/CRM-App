@@ -13,7 +13,7 @@ Built with:
 
 ## Description
 
-This is a DatabaseWebApp. it has a function below : 
+This is a Customer Relationship Manager App. it has a function below : 
 
 - Create user
 - Read user
